@@ -1,0 +1,6 @@
+{
+  "name": "Nexus - AI Study OS",
+  "description": "An AI-powered study operating system for O Level and IGCSE students featuring a gamified dashboard, past papers, AI tutor, and smart marking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

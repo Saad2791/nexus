@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-background: #0A0A0C;
+  --color-surface: #18181b;
+  --color-surface-hover: #27272a;
+  --color-neon-cyan: #06b6d4;
+  --color-neon-cyan-glow: rgba(6, 182, 212, 0.4);
+  --color-neon-purple: #a855f7;
+  --color-neon-purple-glow: rgba(168, 85, 247, 0.4);
+  --color-neon-green: #a3e635;
+  --color-neon-orange: #f97316;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: #f4f4f5;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    background: rgba(24, 24, 27, 0.8);
+    border: 1px solid #27272a;
+    border-radius: 1.5rem;
+  }
+  
+  .neon-border-cyan {
+    border: 1px solid var(--color-neon-cyan);
+    box-shadow: 0 0 10px var(--color-neon-cyan-glow), inset 0 0 10px var(--color-neon-cyan-glow);
+  }
+
+  .neon-border-purple {
+    border: 1px solid var(--color-neon-purple);
+    box-shadow: 0 0 10px var(--color-neon-purple-glow), inset 0 0 10px var(--color-neon-purple-glow);
+  }
+  
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}

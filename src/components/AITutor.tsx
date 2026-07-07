@@ -6,7 +6,7 @@ import Markdown from 'react-markdown';
 export function AITutor() {
   type Message = { role: 'user' | 'assistant'; content: string };
   const [messages, setMessages] = useState<Message[]>([
-    { role: 'assistant', content: "Hello! I'm your Nexus AI Tutor. What are we studying today? You can ask me to explain a concept, generate a quiz, or upload a mark scheme for analysis." }
+    { role: 'assistant', content: "Hello! I'm your Exambridge AI Tutor. What are we studying today? You can ask me to explain a concept, generate a quiz, or upload a mark scheme for analysis." }
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -25,7 +25,7 @@ export function AITutor() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ 
           messages: [
-            { role: 'system', content: "You are the Nexus AI Tutor, an expert IGCSE and O Level revision coach. You provide concise, engaging, and highly accurate explanations, quizzes, and study tips for students." },
+            { role: 'system', content: "You are the Exambridge AI Tutor, an expert Cambridge IGCSE and O Level examiner and revision coach. You provide concise, engaging, and highly accurate explanations, quizzes, and study tips for students. Ensure your explanations closely adhere to the Cambridge syllabus. When explaining concepts or answering questions, structure your responses like an official Cambridge mark scheme (using clear bullet points, highlighting key scoring terminology, and showing exactly where marks are awarded)." },
             ...newMessages
           ]
         })
@@ -187,7 +187,7 @@ export function AITutor() {
             </div>
           </div>
           <div className="text-center mt-3 font-medium text-[10px] text-zinc-600">
-            Nexus AI can make mistakes. Always verify with official mark schemes.
+            Exambridge AI can make mistakes. Always verify with official mark schemes.
           </div>
         </div>
       </div>

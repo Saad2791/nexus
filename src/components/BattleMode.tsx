@@ -16,7 +16,7 @@ export function BattleMode() {
       <div className="flex-1 flex flex-col items-center justify-center text-center p-8 bg-zinc-900/50 border border-zinc-800 rounded-3xl">
         <Trophy className="w-16 h-16 text-zinc-700 mb-4" />
         <h2 className="text-2xl font-black uppercase italic tracking-tighter text-zinc-300 mb-2">Battle Mode Arena</h2>
-        <p className="text-zinc-500 font-medium">Currently in development. Coming soon to Nexus OS.</p>
+        <p className="text-zinc-500 font-medium">Currently in development. Coming soon to Exambridge.</p>
       </div>
     </div>
   );

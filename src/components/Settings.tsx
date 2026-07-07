@@ -9,14 +9,14 @@ export function Settings() {
             <SettingsIcon className="w-8 h-8 md:w-10 md:h-10 text-cyan-500" />
             Settings
           </h1>
-          <p className="mt-2 text-zinc-400 text-sm md:text-base uppercase font-bold tracking-tight">Configure Nexus OS.</p>
+          <p className="mt-2 text-zinc-400 text-sm md:text-base uppercase font-bold tracking-tight">Configure Exambridge.</p>
         </div>
       </div>
 
       <div className="flex-1 flex flex-col items-center justify-center text-center p-8 bg-zinc-900/50 border border-zinc-800 rounded-3xl">
         <SettingsIcon className="w-16 h-16 text-zinc-700 mb-4" />
         <h2 className="text-2xl font-black uppercase italic tracking-tighter text-zinc-300 mb-2">System Preferences</h2>
-        <p className="text-zinc-500 font-medium">Currently in development. Coming soon to Nexus OS.</p>
+        <p className="text-zinc-500 font-medium">Currently in development. Coming soon to Exambridge.</p>
       </div>
     </div>
   );

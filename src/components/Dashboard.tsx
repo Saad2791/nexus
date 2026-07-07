@@ -21,7 +21,7 @@ const performanceData = [
   { name: 'Sun', score: 90 },
 ];
 
-export function Dashboard() {
+export function Dashboard({ setActiveTab }: { setActiveTab?: (tab: string) => void }) {
   return (
     <div className="p-8 max-w-7xl mx-auto space-y-8 pb-24">
       {/* Header Section */}
